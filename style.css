@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Fantasy;
+  color:#fe4d4d;
+  
+
+}
+body{
+  background-color: #0f0c27;
+  color:#fe4d4d;
+}
+.resume{
+  width:1000px;
+  height:1000px;
+}
+.collapseColor{
+  background-color:#fe4d4d;
+}
+.navbar{
+    background-color:#2b274e ;
+  color:#fe4d4d;
+}
+.colorRed{
+  color:#fe4d4d;
+}
+
+.samurai{
+  height:300px;
+  width:300px;
+}
+.logo{
+  height:50px;
+  width:50px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+.suit{
+  height:500px;
+  width:500px;
+
+}
+/*button*/
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  position: relative;
+  display: block;
+  color: white ;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid #ff7675;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.btn::before {
+  background: #ff7675;
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.btn2::before {
+  width: 100%;
+  height: 0;
+}
+.btn2:hover::before {
+  height: 100%;
+}
+/*carousel*/  
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+/**
+  * style variables
+*/
+/**
+  * Control & indicator mixin
+*/
+.carousel {
+  height: 500px;
+  width: 700px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  list-style: none;
+
+/**
+    * Control element - right/left arrows
+  */
+/**
+    * Element for holding slide indicators
+  */
+/**
+    * Indicator for indicating active slide
+  */
+/**
+    * Create rules for when slides are contained within a track
+  */
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  opacity: 0.35;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 10px;
+  transform: rotate(-135deg);
+}
+.carousel__control--forward {
+  right: 10px;
+  transform: rotate(45deg);
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.carousel__track .carousel__slide:nth-of-type(1) {
+  transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2) {
+  transform: translateX(100%);
+}
+.carousel__track .carousel__slide:nth-of-type(3) {
+  transform: translateX(200%);
+}
+.carousel__track .carousel__slide:nth-of-type(4) {
+  transform: translateX(300%);
+}
+.carousel__track .carousel__slide:nth-of-type(5) {
+  transform: translateX(400%);
+}
+.carousel--scale .carousel__slide {
+  transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  opacity: 0;
+  border-color:white;
+}
+/**
+  * Theming
+*/
+* {
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  display: inline-block;
+}
+.my-carousel {
+  border-radius: 5px;
+  margin: 30px;
+}
+
+.carousel__slide {
+  overflow: hidden;
+}
+
+.carousel--thumb .carousel__indicator {
+  height: 40px;
+  width: 40px;
+}
+
+.carousel__indicator {
+  background-color: #fafafa;
+}
+.carousel__slide:nth-of-type(1),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  background-image: url("Annabelle.png");
+  background-size: cover;
+  background-position: center;
+}
+.carousel__slide:nth-of-type(2),
+.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  background-image: url("CSS Ghost.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/*scroll*/
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #fe4d4d;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/*reveal images*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fe4d4d;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title{
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.content{
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.content .image img{
+  z-index: 111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content .text-box{
+  z-index: 222;
+  background: #252546;
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+}
+
+.content .text-box h3{
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.media-icons{
+  margin-top: 100px;
+}
+
+.media-icons a{
+  color: #fff;
+  font-size: 2em;
+  margin: 60px;
+}
+
+.section-title{
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+
+.info-title{
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info{
+  width: 700px;
+  margin-left: 50px;
+}
+
+.media-info{
+  width: 400px;
+  margin-left: 50px;
+}
+
+.media-info li{
+  list-style: none;
+  font-size: 1.4em;
+}
+
+.media-info li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.media-info li:not(:last-child){
+  margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1), .media-info li:nth-child(5){
+  padding-left: 100px;
+}
+
+.media-info li:nth-child(2), .media-info li:nth-child(4){
+  padding-left: 50px;
+}
+
+.sec-03{
+  margin-bottom: 100px;
+}
+/*PFP Carousel*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+img:nth-child(6) {
+  animation-delay: 10s;
+}
+img:nth-child(7) {
+  animation-delay: 12s;
+}
+img:nth-child(8) {
+  animation-delay: 14s;
+}
+img:nth-child(9) {
+  animation-delay: 16s;
+}img:nth-child(10) {
+  animation-delay: 18s;
+}
+img:nth-child(11) {
+  animation-delay: 20s;
+}
+.PFP{
+  height:300px;
+  width:300px;
+}
+.longDrawing{
+  height:400px;
+  width:1200px;
+}
+
+/* drawing carousel*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fe4d4d;
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+.regularDrawings{
+  height:600px;
+  width:1000px;
+}
+.paperDrawings{
+  height:700px;
+  width:500px;
+}
