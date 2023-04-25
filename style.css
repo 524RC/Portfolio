@@ -682,4 +682,5 @@ body {
 .projects{
   width:800px;
   height:700px;
+  border-radius: 25px;
 }
